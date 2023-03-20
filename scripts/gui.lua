@@ -17,10 +17,11 @@ local Player = game:GetService("Players").LocalPlayer
 local Character = Player.Character
 local PlayerGui = Player:WaitForChild("PlayerGui")
 
+if PlayerGui:WaitForChild("Zaksgui") then PlayerGui:WaitForChild("Zaksgui"):Destroy() end
+
 local function new()
 	-- GUI Creation
 	
-	if PlayerGui:WaitForChild("Zaksgui") then PlayerGui:WaitForChild("Zaksgui"):Destroy() end
 	
 	local GUI = Instance.new("ScreenGui", PlayerGui)
 	local GuiName = "Zaksgui"
