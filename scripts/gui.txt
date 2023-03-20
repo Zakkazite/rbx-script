@@ -19,6 +19,9 @@ local PlayerGui = Player:WaitForChild("PlayerGui")
 
 local function new()
 	-- GUI Creation
+	
+	if PlayerGui:WaitForChild("Zaksgui") then PlayerGui:WaitForChild("Zaksgui"):Destroy() end
+	
 	local GUI = Instance.new("ScreenGui", PlayerGui)
 	local GuiName = "Zaksgui"
 	GUI.Name = GuiName
